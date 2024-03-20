@@ -22,10 +22,8 @@ import cucumber.api.testng.TestNGCucumberRunner;
         tags = {"~@Ignore"},
         format = {
                 "pretty",
-                "html:target/cucumber-reports/cucumber-pretty",
-                "json:target/cucumber-reports/CucumberTestReport.json",
-                "rerun:target/cucumber-reports/rerun.txt"
-        },plugin = "json:target/cucumber-reports/CucumberTestReport.json")
+                "junit:output"
+        },plugin = "junit:target/surefire-reports.xml")
 
 public class TestRunner
 {
